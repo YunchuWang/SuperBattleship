@@ -1,0 +1,262 @@
+/* CSS Document */
+#leftcanvas {
+    background:url(../img/p1board.jpg);
+	position: fixed;
+	top:15%;
+    left: 15%;
+	overflow:hidden;
+}
+
+html, body {margin:0;padding:0;height:100%;width:100%;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+	overflow:hidden;
+}
+.nav {
+    margin:0;
+	padding: 0;
+	width: 100%;
+	background-color:rgba(0,255,0,1);
+	height:7%;
+}
+.banner {
+	margin:0;
+	padding: 0;
+	width: 100%;
+	height:8%;
+	background:url(../img/header.png) no-repeat center center fixed;
+	background-size: cover;
+	line-height: 55px;
+	 border: none;
+  color:rgba(51,255,255,1);
+  font-size:24px;
+  text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #ff00de , 0 0 70px #ff00de , 0 0 80px #ff00de , 0 0 100px #ff00de ;
+
+
+}
+@keyframes example {
+    0%   {margin-left:-400px; color:rgba(0,255,255,1);}
+    100% {margin-left:100%; color:rgba(255,255,0,1);}
+}
+#textban {
+	font-family: Verdana, Geneva, sans-serif;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+	text-overflow:clip;
+	display: inline-block;
+	animation-name: example;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-direction: alternate;
+}
+.leftsidenav {
+    height: 70%; /* 100% Full-height */
+    width: 15%; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+	bottom: 0;
+    left: 0;
+    background:url(../img/left.png) no-repeat center center fixed;
+	background-size: cover;
+    overflow-x: hidden; /* Disable horizontal scroll */
+     /* Place content 60px from the top */
+	border:none;
+	margin:auto;
+}
+.rightsidenav {
+    height: 70%; /* 100% Full-height */
+    width: 15%; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+	bottom:0;
+    right: 0;
+    background:url(../img/right.png) no-repeat center center fixed;
+	background-size: cover;
+	
+    overflow-x: hidden; /* Disable horizontal scroll */
+	border:none;
+	margin:auto;
+}
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+	height:100%;
+}
+
+.nav ul li {
+    float: left;
+	width:25%;
+	height:100%;
+	font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+
+.nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	height:100%;
+}
+
+.nav ul li a:hover {
+	height:100%;
+}
+
+.red {
+	background-color:#F44336;
+}
+.footer {
+	height: 15%; /* 100% Full-height */
+    width: 100%; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+	bottom:0;
+    right: 0;
+	left: 0;
+    background:url(../img/footer.png) no-repeat center center fixed;
+	background-size: cover;
+}
+
+h5 {
+	padding-top: 20px;
+	padding-left: 10px;
+}
+h6 {
+	font-size:16px;
+}
+
+#commands{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color:rgba(0,153,204,1);
+    border: 1px solid #555;
+}
+
+#commands li a {
+    display: block;
+    color:rgba(255,255,102,1);
+    padding: 8px 0px;
+    text-decoration: none;
+	text-align: center;
+}
+
+#commands li {
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
+#commands li:last-child {
+    border-bottom: none;
+}
+#commands li a:hover {
+    background-color: #555;
+    color: white;
+}
+.paddingleft {
+	padding-left:20px;
+	font:12px white;
+	margin:0 !important;
+	margin-bottom: 10px !important;
+}
+.output {
+	padding-left:20px;
+	font:12px white;
+	margin:0 !important;
+	margin-bottom: 5px !important;
+}
+.p1label {
+	background-color:rgba(255,0,0,1);
+	margin-left:20px;
+	padding:1px 20px;
+	clear:both;
+}
+.p2label {
+	background-color:#432618;
+	margin-left:20px;
+	padding:1px 20px;
+	clear:both;
+}
+.tbmargin {
+	margin: 10px 0px;
+}
+.tbmargin span {
+	padding:0px 3px;
+}
+#cheatmode {
+	margin-top:20px;
+	margin-left: 20px;
+	font-size:12px;
+	color:rgba(51,51,255,1);
+	font-weight:bold;
+}
+#fleets ul ul li:first-child{
+	text-decoration:none;
+	text-indent:10px;
+	padding: 1px 0px;
+	font-size:14px;
+	color:rgba(255,51,0,1);
+}
+#fleets ul ul li:not(:first-child){
+	text-decoration:none;
+	text-indent:20px;
+	padding: 1px 0px;
+	font-size:14px;
+	color:rgba(255,255,255,1);
+}
+#fleets ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#outputarea {
+	color:rgba(51,255,153,1);
+	line-height: 5ex;
+ 	height: 11ex; /* 2.5ex for each visible line */
+ 	overflow: hidden;
+	font: 14px bold !important;
+}
+.tooltipoff {
+    display:none;
+}
+.tooltipon {
+    display:block;
+    position:fixed;
+    overflow:hidden;
+	background-color:#EDEDED;
+	z-index:3;
+	font:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size:12px;
+}
+.footer {
+	text-align: center;
+	font:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	line-height: 3.5ex;
+	overflow: hidden;
+	color:rgba(255,255,255,1);
+	font-size:24px;
+}
+.footer span {
+	position:relative;
+	top:25%;
+}
+#symbols {
+	padding-top: 20px;
+	font-size:16px;
+}
+#symbols h6 {
+	font-size: 18px;
+	font-weight:bold;
+}
+
+
+

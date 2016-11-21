@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<title>Battleship game</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'/>
+<script
+src="http://www.cs.unc.edu/Courses/comp426-f16/jquery-3.1.0.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <div class="banner">
+		<div id="textban">&lt; Welcome to Super Battleship! &gt; </div>
+    </div>
+    <canvas id="leftcanvas"> </canvas>
+	<div class="nav">
+    	<ul>
+          <li><a href="#home" id="startgame" class="tablink" onclick="currrentMode(event, 'startgame');">Start Game</a></li>
+          <li><a href="#news" id="help" class="tablink" onclick="currrentMode(event, 'help');">Help</a></li>
+          <li><a href="#contact" id="replay" class="tablink" onclick="currrentMode(event, 'replay');">Replay Game</a></li>
+          <li><a href="#about" id="quit" class="tablink" onclick="currrentMode(event, 'quit');">Quit</a></li>
+        </ul>
+    </div>
+    <div class="leftsidenav">
+    	<h5>Your Selected Ship: <span id="shipname" style="color:#CC3333;"></span></h5>
+        <ul id="commands">
+          <li><a href="#home" id="RotateCW">RotateCW</a></li>
+          <li><a href="#news" id="RotateCWW">RotateCWW</a></li>
+          <li><a href="#contact" id="Moveforward">Moveforward</a></li>
+          <li><a href="#about" id="Movebackward">Movebackward</a></li>
+        </ul>
+        <div id="symbols">
+        	<h6 class="paddingleft" style="color:rgba(102,0,255,1);">Instructions:</h6>
+            <div class="tbmargin"><label class="p1label"></label> <span>  </span>  &amp; Your ships</div>
+            
+            <div class="tbmargin"><label class="p2label"></label> <span>  </span>  &amp; Enemy ships</div>
+            <h6 class="output" style="color:rgba(204,51,102,1);">Output:</h6>
+            <div class="output" id="outputarea"></div>
+        </div>
+        <div id="cheatmode">Cheat Mode
+        	<input id="cheatbox" type="checkbox" name="cheatmode" value="cheat" onClick="togglecheat(this)">
+        </div>
+    </div>
+    <div class="rightsidenav">
+    	<h5 style="color:rgba(0,0,0,1);font-size:18px;margin:0px;">P1 Fleet info: </h5>
+        <div id="fleets">
+        	<ul></ul>
+        </div>
+    </div>
+    <div class="footer"><span></span></div>
+    <div id="tip" class="tooltipoff"><span>akjlsd</span></div>
+    <script src="js/SBConstants.js"></script>
+	<script src="js/gameinfo.js"></script>
+    <script src="js/commands.js"></script>
+	<script src="js/battleship.js"></script>
+    <audio controls loop style="display:none;" autoplay>
+  		<source src="audio/CodeMonkey.mp3" type="audio/mpeg">
+  		Your browser does not support the audio element.
+	</audio>
+</body>
+</html>
